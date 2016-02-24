@@ -11,8 +11,8 @@ var stopAnim = function(e){
 }
 
 var draw = function(e){
-	var x = Math.floor((Math.random() * 500) + 1 - 10);
-	var y = Math.floor((Math.random() * 500) + 1 - 10);
+	var x = Math.floor((Math.random() * 460) + 21);
+	var y = Math.floor((Math.random() * 460) + 21);
 	var cx = 1;
 	var cy = 1;
 	window.cancelAnimationFrame(frameid);
@@ -21,9 +21,9 @@ var draw = function(e){
 		ctx.beginPath();
 		ctx.arc(x,y,20,0,2*Math.PI);
 		ctx.fill();
-		if(x+20>=500||x<=0)
+		if(x+20>=500||x<=20)
 			cx *= -1;
-		if(y+20>=500||y<=0)
+		if(y+20>=500||y<=20)
 			cy *= -1;
 		x += cx;
 		y += cy;
