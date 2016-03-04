@@ -1,6 +1,7 @@
 var pic = document.getElementById("vimg");
 var b1 = document.getElementById("animate");
 var b2 = document.getElementById("stop");
+var b3 = document.getElementById("clear");
 var id;
 
 var drawC = function(){
@@ -34,12 +35,16 @@ var drawC = function(){
 };
 
 var clear = function(){
-	if(id)
-		clearInterval(id);
 	var c = document.getElementsByTagName("circle");
 	if(c[0])
 		c[0].remove();
 }
 
+var stop = function(){
+	if(id)
+		clearInterval(id);
+}
+
 b1.addEventListener("click",drawC);
-b2.addEventListener("click",clear);
+b2.addEventListener("click",stop);
+b3.addEventListener("click",clear);
