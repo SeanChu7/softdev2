@@ -1,11 +1,45 @@
-.bar {
-    width: 50px;
+.bar{
+	text-align: center;
+	width: 150px;
+	height: 25px;
+}
+.bara {
+    width: 150px;
     height: 25px;
-    border: 1px solid black;
     background-color: red;
     text-align: left;
+    border-radius: 5px;
+}
+.baru {
+	width: 150px;
+	height: 25px;
+	background-color: gray;
+	text-align: left;
+	border-radius: 5px;
 }
 .chart{
+	margin: auto;
+	background-color: white;
 	text-align:left;
-	height:120px;
+	width: 1000px;
+	height:100px;
+}
+.center{
+	text-align: center;
+	margin: auto;
+}
+.button{
+	height:100%;
+	width:150px;
+	text-align: center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;    
+    border-color: black;
+    border-style: groove;
+}
+.img{
+	width:150px;
+	height:150px;
 }

@@ -3,20 +3,30 @@
 <html>
   <head>
     <title>
-      Republican Delegates
+      Republican and Democratic Delegates
     </title>
   </head>
   <body>
-    <h1>Republican Party Delegates</h1>
-    <a href="http://www.thegreenpapers.com/P16/R-PU.phtml">Source</a>
-    <h3>Key</h3>
-    <p>Red = Allotted</p>
-    <p>Gray = Unallotted</p>
-    <p>Cyan = Total Number of Delegates</p>
-    <h3>Overall Statistics</h3>
-    <p>Total Allotted: 2366</p>
-    <p>Total Unallotted: 106</p>
-    <p>Total Number of Delegates: 2472</p>
+    <div class="center">
+      <h1>Republican Party Delegates</h1>
+      <h3>Sources</h3>
+      <a href="http://www.thegreenpapers.com/P16/R-PU.phtml">Republican</a>
+      <a href="http://www.thegreenpapers.com/P16/D-PU.phtml">Democrat</a>
+    </div>
+    <div class="button">
+      <br><br><br><br>
+      <h3>Current Party:</h3>
+      <h2>Republican</h2>
+      <div class="img">
+      <img src="rep.gif">
+    </div>
+      <h3>Key</h3>
+      <div class="bar" style="background-color:red">Republican Allotted</div>
+      <div class="bar" style="background-color:blue">Democrat Allotted</div>
+      <div class="bar" style="background-color:gray">Unallotted</div>
+      <br>
+      <button id="switch">Change Party</button>
+    </div>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="index.js"></script>
     <link rel="stylesheet" href="css/style.css"></link>
